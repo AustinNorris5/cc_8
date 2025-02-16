@@ -19,9 +19,9 @@ let calculateDiscount = function(price, discountRate) {
     console.log(`Final Price: $${finalPrice.toFixed(2)}`);
 };
 
-//Log to the console and test data
-console.log(calculateDiscount(100, 0.2));
-console.log(calculateDiscount(250, 0.15));
+//Test the data
+calculateDiscount(100, 0.2);
+calculateDiscount(250, 0.15);
 
 //Task 3: Arrow Function
 
