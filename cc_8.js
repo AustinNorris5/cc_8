@@ -83,3 +83,20 @@ let filterLargeTransactions = (transactions, filterFunction) => {
 
 //Log to the console and test data
 console.log(filterLargeTransactions(transactions, amount => amount > 1000));
+
+//Task 7: Closures
+
+//Write a function that returns another function to add items and maintain a running total
+function createCartTracker() {
+    let total = 0;
+    return function(amount) {
+        total += amount;
+        return `Total Cart Value: $${total}`;
+    };
+};
+
+//Log to the console and test data
+let cart = createCartTracker();
+console.log(cart(20));
+console.log(cart(35));
+
